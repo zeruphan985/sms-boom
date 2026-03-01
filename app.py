@@ -3,6 +3,7 @@ import requests
 import random
 import string
 import re
+import os
 import time
 from datetime import datetime
 
@@ -327,7 +328,7 @@ def test_creds():
         "password": password,
         "note": "These are randomly generated test credentials"
     })
-
-# Vercel requires this
 if __name__ == '__main__':
-    app.run(debug=False)
+    # রেন্ডার থেকে অটোমেটিক পোর্ট নম্বর নিবে, না পেলে ৫০০২ ব্যবহার করবে
+    port = int(os.environ.get("PORT", 5002))
+    app.run(host='0.0.0.0', port=port)
