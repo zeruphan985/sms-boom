@@ -16,20 +16,21 @@ MAX_WORKERS = 10  # Reduced for serverless
 
 # Enhanced headers
 BASE_HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Cache-Control': 'max-age=0',
-    'sec-ch-ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'Origin': 'https://fsmms.dgf.gov.bd',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Site': 'same-origin',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-User': '?1',
-    'Sec-Fetch-Dest': 'document',
-    'Accept-Language': 'en-US,en;q=0.9',
+'host: lsg-land-owner.land.gov.bd',
+'content-length: 172',
+'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"',
+'sec-ch-ua-mobile: ?1',
+'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36',
+'content-type: application/x-www-form-urlencoded; charset=UTF-8',
+'accept: */*',
+'sec-ch-ua-platform: "Android"',
+'origin: https://lsg-land-owner.land.gov.bd',
+'sec-fetch-site: same-origin',
+'sec-fetch-mode: cors',
+'sec-fetch-dest: empty',
+'referer: https://lsg-land-owner.land.gov.bd/home',
+'accept-encoding: gzip, deflate, br',
+'accept-language: en-GB,en-US;q=0.9,en;q=0.8',
 }
 
 # Helper functions
