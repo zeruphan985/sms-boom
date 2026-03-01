@@ -98,7 +98,7 @@ def get_session_and_bypass(nid, dob, mobile, password):
 
 def try_otp(session_manager, otp):
     try:
-        url = 'https://fsmms.dgf.gov.bd/bn/step2/movementContractor/mov-otp-step'
+        url = 'https://lsg-land-owner.land.gov.bd/check/user/nid/verification'
         
         headers = BASE_HEADERS.copy()
         headers.update({
